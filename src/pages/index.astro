@@ -1,0 +1,73 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import { getCollection } from "astro:content";
+import createSlug from "../lib/createSlug";
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const last_posts = posts.slice(0, 3);
+---
+
+<BaseLayout sideBarActiveItemID="home">
+  <div class="pb-12 mt-5">
+    <div class="text-xl py-1">Hey there 👋</div>
+    <div class="text-5xl font-bold">I'm Emily Wong</div>
+    <div class="text-3xl py-3 font-bold">Marketing & Growth Strategist</div>
+    <div class="py-2">
+      <text class="text-lg">
+        I love working with great people and solving interesting challenges.
+        With my background in product management and proven track record in
+        building and scaling content engines, I'm passionate about leveraging
+        strategic insights to drive results and growth at early stage companies.
+      </text>
+    </div>
+    <div class="mt-8">
+      <a
+        class="btn"
+        href="https://www.linkedin.com/in/emily-wong-098666157/"
+        target="_blank"
+      >
+        Let's connect!</a
+      >
+    </div>
+  </div>
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-2">Check out my work</div>
+  </div>
+
+  <HorizontalCard
+    title="Content Strategy"
+    img="/paved-blog.png"
+    desc="Running campaigns, series, and editorial calendars to increase awareness, promote education, and engage targeted audiences"
+    url="/content-strategy"
+    target="_self"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Customer Marketing"
+    img="/lxb-help-center.png"
+    desc="Developing and launching resources to enable customers, deliver product education, and expand accounts"
+    url="/customer-marketing"
+    target="_self"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Social Media"
+    img="/s360-instagram.png"
+    desc="Building out content calendars and growth strategies to increase awareness and engagement across high-impact social platforms"
+    url="/social-media"
+    target="_self"
+  />
+  <!--   <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Software Development"
+    img="/post_img.webp"
+    desc="Working on the research & development side to bring new products and features to life"
+    url="/software-development"
+    target="_self"
+  /> -->
+</BaseLayout>

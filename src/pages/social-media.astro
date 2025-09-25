@@ -1,0 +1,42 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title="Projects" sideBarActiveItemID="social-media">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Social Media</div>
+  </div>
+
+  <HorizontalCard
+    title="Modives | LinkedIn"
+    img="/modives-linkedin.png"
+    desc="Building out the Modives LinkedIn account to increase brand reach and establish authority within the insurance verification space"
+    url="/modives-linkedin"
+    target="_self"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Auto Quote Tracker | TikTok"
+    img="/aqt-tiktok.png"
+    desc="Starting a TikTok account from scratch to build brand awareness and direct users to shop on the Auto Quote Tracker website"
+    url="/aqt-tiktok"
+    target="_self"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Scholarships360 | Instagram"
+    img="/s360-instagram.png"
+    desc="Revamping the Scholarships360 Instagram account to grow the social following with content aimed at high school and college students looking for scholarships"
+    url="/s360-instagram"
+    target="_self"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Logixboard | LinkedIn"
+    img="/lxb-linkedin.png"
+    desc="Managing the Logixboard LinkedIn to increase brand awareness and engagement across an audience of logistics professionals"
+    url="/lxb-linkedin"
+    target="_self"
+  />
+</BaseLayout>

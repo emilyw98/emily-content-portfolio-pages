@@ -1,0 +1,81 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Stats from "src/components/Stats.astro";
+---
+
+<BaseLayout title="Projects" sideBarActiveItemID="modives-blog">
+  <div>
+    <div class="text-center">
+      <div class="text-3xl w-full font-bold mb-5">Modives Blog</div>
+      <a href="https://modives.com/blog/" target="_blank"
+        ><img
+          class="p-10"
+          src="/modives-blog.png"
+          alt="Logixboard Blog Screenshot"
+        /></a
+      >
+      <Stats
+        stattitle1="Organic traffic (quarterly)"
+        stat1="1.1k"
+        desc1="↗︎ 466 (72% YoY)"
+        stattitle2="Google SERP Impr."
+        stat2="276k"
+        desc2="↗︎ 256k (1287% YoY)"
+      />
+    </div>
+
+    <div>
+      <p>
+        <b>Overview:</b>
+        <br />
+        We launched a blog strategy aimed at increasing organic traffic and establishing
+        Modives as an authority in the insurance verification space.
+      </p>
+      <br />
+      <p>
+        In this effort, we built a calendar segmented into property and auto,
+        prioritizing content based on: pain points from sales conversations, SEO
+        opportunities, partner collaborations. We also maximized content
+        distribution through internal linking, social media syndication, and
+        newsletters.
+      </p>
+      <br />
+      <p>
+        By increasing organic reach, we reduced our ad spend by $10k per month.
+        As a result, we redirected our advertising budget to lower funnel
+        campaigns, including boosting lead magnets and webinars.
+      </p>
+    </div>
+    <div class="pt-5">
+      <p>
+        <b>Collaborators:</b>
+        CMO, Design team
+      </p>
+    </div>
+    <div class="pt-5">
+      <p>
+        <b>Tools:</b>
+        Semrush, GA4, Google Search Console, Plausible, WordPress, Elementor
+      </p>
+    </div>
+    <div class="pt-5">
+      <p>
+        <b>My responsibilities:</b>
+        <ul>
+          <li>
+            • Outline and execute blog calendar based on SEO opportunities,
+            community topics, and customer needs
+          </li>
+          <li>
+            • Coordinate interviews and content approvals with partners and
+            industry experts
+          </li>
+          <li>
+            • Monitor blog performance with analytics tools and make updates as
+            needed
+          </li>
+        </ul>
+      </p>
+    </div>
+  </div>
+</BaseLayout>

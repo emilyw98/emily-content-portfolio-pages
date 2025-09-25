@@ -1,0 +1,79 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Stats from "src/components/Stats.astro";
+---
+
+<BaseLayout title="Projects" sideBarActiveItemID="lxb-help-center">
+  <div>
+    <div class="text-center">
+      <div class="text-3xl w-full font-bold mb-5">Logixboard Help Center</div>
+      <a href="https://help.logixboard.com/" target="_blank"
+        ><img
+          class="p-10"
+          src="/lxb-help-center.png"
+          alt="Logixboard Help Center Screenshot"
+        /></a
+      >
+      <Stats
+        stattitle1="Site visitors"
+        stat1="2k+"
+        desc1="over 6 months"
+        stattitle2="Article views"
+        stat2="11.8k"
+        desc2="over 6 months"
+      />
+    </div>
+
+    <div class="pt-5">
+      <p>
+        <b>Overview:</b>
+        <br />
+        To streamline customer communications and enable self-serve learning, we
+        launched an effort to transition our customer-facing resources from Guru
+        to Intercom. Over a period of six months, our team leveraged feedback and
+        data from the original knowledge base to design a new help center layout,
+        draft articles, and create a roll-out plan to introduce it to customers.
+      </p>
+      <br />
+      <p>
+        While results were ongoing, we received initial positive feedback from
+        the redesign. We also saw high engagement relative to our customer base,
+        with an average of 2k article views per month.
+      </p>
+    </div>
+  </div>
+  <div class="pt-5">
+    <p>
+      <b>Collaborators:</b>
+      CS Operations Manager, CX team, Product team, Support team
+    </p>
+  </div>
+  <div class="pt-5">
+    <p>
+      <b>Tools:</b>
+      Loom, Canva, Intercom
+    </p>
+  </div>
+  <div class="pt-5">
+    <p>
+      <b>My responsibilities:</b>
+      <ul>
+        <li>
+          • Collaborate with project manager to outline Help Center structure
+          and create article templates
+        </li>
+        <li>
+          • Draft and design new articles to fill in gaps from legacy resources
+        </li>
+        <li>
+          • Pull in internal stakeholders from Product and Engineering to review
+          technical documentation as needed
+        </li>
+        <li>
+          • Build style guide to ensure consistency across copy and visuals in
+          the Help Center
+        </li>
+      </ul>
+    </p>
+  </div>
+</BaseLayout>
