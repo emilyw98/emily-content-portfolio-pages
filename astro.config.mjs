@@ -7,6 +7,5 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: 'https://emilyw98.github.io',
   base: '/emily-content-portfolio-pages/',
-  outDir: './docs',
   integrations: [mdx(), sitemap(), tailwind()]
 });
