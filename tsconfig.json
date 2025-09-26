@@ -11,9 +11,5 @@
         "src/layouts/*"
       ]
     }
-  },
-  "include": [
-    ".astro/types.d.ts",
-    "src/**/*"
-  ]
+  }
 }

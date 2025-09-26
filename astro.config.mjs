@@ -5,7 +5,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://emilyw98.github.io',
   base: '/emily-content-portfolio-pages/',
+  site: 'https://emilyw98.github.io',
   integrations: [mdx(), sitemap(), tailwind()]
 });
